@@ -1,0 +1,80 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Loading Flat UI Pro -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-xs-3">
+
+            <h3 class="demo-panel-title">Checkboxes</h3>
+
+            <fui-checkbox ng-model="modelCheckbox1" ng-disabled="false" id="Checkbox1">modelCheckbox1={{modelCheckbox1}}</fui-checkbox>
+            <button class="btn btn-wide btn-default" ng-click="modelCheckbox1=!modelCheckbox1">toggle modelCheckbox1</button>
+
+            <hr>
+
+            <fui-checkbox ng-model="modelCheckbox2" id="Checkbox2">modelCheckbox2={{modelCheckbox2}}</fui-checkbox>
+            <button class="btn btn-wide btn-default" ng-click="modelCheckbox2=!modelCheckbox2" ng-init="modelCheckbox2 = true">toggle modelCheckbox2</button>
+
+
+        </div>
+        <div class="col-xs-3">
+            <h3 class="demo-panel-title">Switches</h3>
+
+            <fui-switch ng-model="modelSwitch1" ng-init="modelSwitch1 = true"></fui-switch>
+            <fui-switch ng-model="modelSwitch1" data-on-color="success" data-on-text="Hi" data-off-text="By"></fui-switch>
+
+            <hr>
+
+            <fui-switch ng-model="modelSwitch2" data-on-color="info"></fui-switch>
+            <button class="btn btn-wide btn-default" ng-click="modelSwitch2=!modelSwitch2" style="margin-top: 5px;">toggle modelSwitch2</button>
+            <hr>
+
+            <fui-switch ng-model="modelSwitch3" data-on-color="warning" data-off-color="danger" ng-init="modelSwitch3=true"></fui-switch>
+
+            <span class="label label-default">modelSwitch3 = {{modelSwitch3}}</span>
+            <hr>
+
+            <fui-switch ng-disabled="true" ng-model="modelSwitch4"></fui-switch>
+            <fui-switch ng-disabled="true" ng-model="modelSwitch5" ng-init="modelSwitch5=true"></fui-switch>
+
+
+        </div> <!-- /checkboxes col-xs-3 -->
+
+        <div class="col-xs-3">
+            <h3 class="demo-panel-title">Radiobuttons</h3>
+
+            <fui-radio ng-value="0" name="group1" id="r0" ng-model="modelRadioGroup1" ng-init="modelRadioGroup1=0">Radio 0</fui-radio>
+            <fui-radio ng-value="1" name="group1" id="r1" ng-model="modelRadioGroup1">Radio 1</fui-radio>
+            <fui-radio ng-value="2" name="group1" id="r2" ng-model="modelRadioGroup1">Radio 2</fui-radio>
+            <fui-radio ng-value="3" name="group1" id="r3" ng-model="modelRadioGroup1">Radio 3</fui-radio>
+            <fui-radio ng-value="4" name="group1" id="r4" ng-model="modelRadioGroup1" ng-disabled="true">Radio disabled</fui-radio>
+
+            <span class="label label-default">modelRadioGroup1 = {{modelRadioGroup1}}</span>
+            <button class="btn btn-wide btn-default" ng-click="modelRadioGroup1=2">set modelRadioGroup1=2</button>
+
+        </div> <!-- /radiobutton col-xs-3 -->
+
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
+<script src="../directives/fui.js"></script>
+<script src="../directives/fui-checkbox.js"></script>
+<script src="../directives/fui-switch.js"></script>
+<script src="../directives/fui-radio.js"></script>
+<script src="scripts/app.js"></script>
+
+</body>
+</html>

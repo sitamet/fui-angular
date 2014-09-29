@@ -1,0 +1,10 @@
+<div ng-click="toggle()"
+     ng-class="{'bootstrap-switch-off': !ngModel, 'bootstrap-switch-on': ngModel, 'bootstrap-switch-disabled': ngDisabled}"
+     class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate">
+    <div class="bootstrap-switch-container">
+        <span class="bootstrap-switch-handle-on bootstrap-switch-default" ng-class="switchOnColor">{{onText}}</span><label class="bootstrap-switch-label">&nbsp;</label><span class="bootstrap-switch-handle-off bootstrap-switch-default" ng-class="switchOffColor">{{offText}}</span>
+        <input type="checkbox"
+               ng-model="ngModel" ng-disabled="ngDisabled" ng-value="ngValue" ng-required="ngRequired"
+               name="{{name}}" ng-checked="ngModel">
+    </div>
+</div>

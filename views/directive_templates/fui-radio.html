@@ -1,0 +1,10 @@
+<label class="radio" for="{{'radio' + id}}">
+    <input type="radio" class="custom-radio"
+           ng-model="ngModel" ng-disabled="ngDisabled" ng-value="ngValue" ng-required="ngRequired" ng-checked="ngModel==ngValue"
+           id="{{'radio' + id}}" name="{{name}}">
+    <span class="icons">
+        <span class="icon-unchecked"></span>
+        <span class="icon-checked"></span>
+    </span>
+    <span ng-transclude></span>
+</label>
