@@ -18,7 +18,7 @@ bower install --save fui-angular
 Add a copy of views/directive_templates to your path. This lets you to adapt and tweak templates to your needs.
 
 Example:
-
+```
 app
 |-- index.html
 |-- scripts
@@ -30,7 +30,7 @@ app
     |   `-- fui-switch.html
     |-- home.html
     |...
-
+```
 
 ## Project philosophy
 
