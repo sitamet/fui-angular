@@ -10,7 +10,7 @@ angular.module('fui.checkbox',[])
   .directive('fuiCheckbox', function () {
       return {
           restrict: 'E',
-          templateUrl: '../views/directive_templates/fui-checkbox.html',
+          templateUrl: 'views/directive_templates/fui-checkbox.html',
           replace: true,
           transclude: true,
           scope: {

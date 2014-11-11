@@ -10,7 +10,7 @@ angular.module('fui.switch',[])
   .directive('fuiSwitch', function () {
       return {
           restrict: 'E',
-          templateUrl: '../views/directive_templates/fui-switch.html',
+          templateUrl: 'views/directive_templates/fui-switch.html',
           replace: true,
           scope: {
               ngModel: '=',

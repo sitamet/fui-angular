@@ -10,7 +10,7 @@ angular.module('fui.radio',[])
   .directive('fuiRadio', function () {
       return {
           restrict: 'E',
-          templateUrl: '../views/directive_templates/fui-radio.html',
+          templateUrl: 'views/directive_templates/fui-radio.html',
           replace: true,
           transclude: true,
           scope: {
