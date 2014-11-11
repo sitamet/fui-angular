@@ -1,16 +1,16 @@
 {
     "name": "fui-angular",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "authors": [
         "Joan Vega <joan@inte.es>"
     ],
     "description": "Native AngularJS directives for Flat UI Pro (by Designmodo). Pure AngularJS directives with no jQuery.",
     "homepage": "https://github.com/sitamet/fui-angular",
     "main": [
-        "directives/fui-checkbox.js",
-        "directives/fui-radio.js",
-        "directives/fui-switch.js",
-        "directives/fui.js"
+        "fui-checkbox.js",
+        "fui-radio.js",
+        "fui-switch.js",
+        "fui.js"
     ],
     "keywords": [
         "fui",

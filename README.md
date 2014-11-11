@@ -10,9 +10,27 @@ This is a simple collection of angular directives to work in conjunction with  *
 ## Installation
 Installation is easy as fui-angular has minimal dependencies - only the AngularJS, Flat UI and Bootstrap's CSS are required.
 
+### 1.-
 ```
 bower install --save fui-angular
 ```
+### 2.-
+Add a copy of views/directive_templates to your path. This lets you to adapt and tweak templates to your needs.
+
+Example:
+
+app
+|-- index.html
+|-- scripts
+|   |-- app.js
+`-- views
+    |-- directive_templates
+    |   |-- fui-checkbox.html
+    |   |-- fui-radio.html
+    |   `-- fui-switch.html
+    |-- home.html
+    |...
+
 
 ## Project philosophy
 
