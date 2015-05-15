@@ -1,6 +1,6 @@
 {
     "name": "fui-angular",
-    "version": "0.2.0",
+    "version": "0.1.4",
     "authors": [
         "Joan Vega <joan@inte.es>"
     ],
@@ -32,7 +32,6 @@
         "tests"
     ],
     "dependencies": {
-        "angular": ">=1.2.0",
-        "flat-ui": ">=2.2.0"
+        "angular": ">=1.2.0"
     }
 }
