@@ -1,0 +1,15 @@
+{
+  "name": "fui-angular",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.2",
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.6.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-html": "^1.0.2"
+  }
+}
