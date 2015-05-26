@@ -7,10 +7,11 @@
     "description": "Native AngularJS directives for Flat UI Pro (by Designmodo). Pure AngularJS directives with no jQuery.",
     "homepage": "https://github.com/sitamet/fui-angular",
     "main": [
+        "fui-template.js",
         "fui-checkbox.js",
         "fui-radio.js",
         "fui-switch.js",
-        "fui.js"
+        "fui-tpls.js"
     ],
     "keywords": [
         "fui",
