@@ -42,15 +42,14 @@ We are aiming at providing a set of AngularJS directives based on Flat UI and Bo
 
 Each directive has its own AngularJS module without any dependencies on other modules or third-party JavaScript code. In practice it means that you can **just grab the code for the directives you need** and you are not obliged to drag the whole repository.
 
-### Usage
+### Usage: a)
 
-Inside directives dir you can find fui.js
-This is a module wrapper:
+`fui.js` This is a module wrapper:
 
 ```javascript
 angular.module('fui',['fui.checkbox','fui.switch','fui.radio']);
 ```
-Inject the fui.* directives yoou need to module 'fui',
+Inject the fui.* directives you need to module 'fui',
 then inject 'fui' module component to your app like:
 
 ```javascript
@@ -58,6 +57,36 @@ angular.module('app', ['fui']);
 ```
 
 Remember you also need the bootstrap.css, flat-ui.css/flat-ui-pro.css and glyphicons
+
+### Usage: b) $templateCache as provider for templates
+
+`fui-tpls.js` is almost same as `fui.js but fui.template module is added to be used as template provider.
+
+```javascript
+angular.module('fui',['fui.template','fui.checkbox','fui.switch','fui.radio']);
+```
+Inject the fui.* directives you need to module 'fui',
+then inject 'fui' module component to your app like:
+
+```javascript
+angular.module('app', ['fui']);
+```
+
+Remember you also need the bootstrap.css, flat-ui.css/flat-ui-pro.css and glyphicons
+
+
+#### Gulp generator to create fui-template.js
+
+fui.template(fui-template.js) is converted by views/directive_templates/*.html.
+
+```sh
+$ pwd
+/path/to/fui-angular
+$ sudo npm install -g gulp // <- if necessary
+$ npm install
+$ gulp
+```
+
 
 ## Components
 
